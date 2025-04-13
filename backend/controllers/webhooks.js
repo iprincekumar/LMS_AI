@@ -1,4 +1,4 @@
-import {webhook} from "svix"
+import {Webhook } from "svix"
 import User from "../models/User.js";
 
 //API controller function to manage cleark user with database
