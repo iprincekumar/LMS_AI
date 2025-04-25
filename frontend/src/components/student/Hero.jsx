@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { assets } from "../../LMS_assets/assets/assets";
 import SearchBar from "./SearchBar";
+import { Typewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
 //   return (
@@ -36,8 +37,16 @@ const Hero = () => {
 return (
     <div className="flex flex-col items-center justify-center w-full md:pt-36 pt-24 px-7 md:px-0 space-y-7 text-center bg-gradient-to-b from-cyan-100/70 relative">
       
-      <h1 className="md:text-4xl text-2xl font-bold leading-tight relative z-10">
-        Transforming Education,<br /> One Click at a Time! 
+      <h1 className="whitespace-pre-line md:text-4xl text-2xl font-bold leading-tight relative z-10">
+      <Typewriter
+        words={['Transforming Education,\n One Click at a Time!']}
+        loop={true}
+        cursor
+        cursorStyle="|"
+        typeSpeed={100}
+        deleteSpeed={60}
+        delaySpeed={1000}
+      /> 
         <span className="text-blue-600"> #EduGeniusAI</span>
       </h1>
   

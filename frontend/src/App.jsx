@@ -12,6 +12,12 @@ import AddCourse from './pages/educator/AddCourse'
 import MyCourses from './pages/educator/MyCourses'
 import StudentsEnrolled from './pages/educator/StudentsEnrolled'
 import Navbar from './components/student/Navbar'
+// import your pages
+import About from './pages/About';
+import Service from './pages/Service';
+import Contact from './pages/Contact';
+import Privacy from './pages/Privacy';
+
 import "quill/dist/quill.snow.css";
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -58,6 +64,13 @@ const App = () => {
               <Route path='mycourses' element={<MyCourses />} />
               <Route path='student-enrolled' element={<StudentsEnrolled />} />
             </Route>
+            
+            
+            <Route path='/about' element={<About />} />
+            <Route path='/services' element={<Service />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/privacy' element={<Privacy />} />
+            
           </Routes>
         </motion.div>
       </AnimatePresence>

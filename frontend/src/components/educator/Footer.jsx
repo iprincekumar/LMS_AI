@@ -2,6 +2,7 @@ import React from 'react';
 import { assets } from '../../LMS_assets/assets/assets';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
 
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12 px-6 md:px-16 relative overflow-hidden">
